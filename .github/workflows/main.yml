@@ -4,7 +4,15 @@ jobs:
   test-code:
     runs-on: ubuntu-latest
     steps:
-      - name: Print working dir
+      - name: capying the code
+        uses: actions/checkout@v4
+
+      - name: upgrade node version
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22.12
+      - name: check version
         run: |
           node -v
-          git -v
+          ls -a
+          
