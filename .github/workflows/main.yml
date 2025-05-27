@@ -11,8 +11,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22.12
+          
       - name: check version
         run: |
           node -v
           ls -a
-          
+
+      - name: install dependance
+        run: npm i
+
+      - name: test the code
+        run: npm run test       
