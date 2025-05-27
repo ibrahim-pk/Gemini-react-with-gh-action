@@ -18,9 +18,7 @@ jobs:
           ls -a
 
       - name: install dependance
-        run: npm i
-      - name: install vitest
-        run: npm install -D vitest  
+        run: npm i  
 
       - name: test the code
         run: npm run test       
